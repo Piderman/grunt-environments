@@ -1,6 +1,19 @@
 @import "vars";
 
+
+
 body {
 	background: $branding__main;
 	color: $branding__alt;
+}
+
+
+
+.top {
+	opacity: 0.5;
+
+	.neseted {
+		position: absolute;
+		top: 0; left: 50%;
+	}
 }

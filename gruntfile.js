@@ -1,15 +1,6 @@
 module.exports = function(grunt) {
 
-  // Project configuration.
   grunt.initConfig({
-
-    // see http://culttt.com/2013/11/18/setting-sass-grunt/#highlighter_929506
-
-    // update this on a per-project basis?
-    project: {
-      css: "standard/styles",
-      js: "standard/scripts"
-    },
 
     uglify: {
       dev: {
@@ -77,7 +68,7 @@ module.exports = function(grunt) {
       sass: {
 
         // update when these types are changed
-        files: 'stlyles/*.scss',
+        files: 'styles/*.scss',
 
         // and do what with said change?
         tasks: ['sass:dev']
@@ -90,7 +81,7 @@ module.exports = function(grunt) {
 
 
       livereload: {
-        files: ['*.html', '**/*.css'],
+        files: ['*.html', 'build/*.css'],
         options: {
           livereload: true
         }
